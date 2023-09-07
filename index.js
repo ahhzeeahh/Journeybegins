@@ -69,6 +69,203 @@ if (calcYear === 0) {
 }
 
 
+//--------basic-calculator
+
+function add(x,y) {
+    return x + y
+     
+ }
+ function sub(x,y) {
+    return x - y
+     
+ }
+ function mul(x,y) {
+    return x * y
+     
+ }
+ function div(x,y) {
+    return x / y
+     
+ }
+ 
+ function rem(x,y) {
+    return x % y
+     
+ }
+ function calc(x,y, operator) {
+    return operator(x,y)
+     
+ }
+ 
+  
+  
+
+//---fizzbuzz game --------
+
+
+let myArray = [];
+let i = 1;
+
+ 
+
+while (i < 101) {
+    if (i % 3 ===0 && i % 5 ===0) {
+        console.log(myArray.push("fizzbuzz"))
+        i++
+    }  else if (i % 3 ===0) {
+        console.log(myArray.push("fizz"))
+        i++
+    } else if (i % 5 ===0) {
+        console.log(myArray.push("buzz"))
+        i++
+    }    
+        console.log(myArray.push(i))
+        i++
+    }
+        
+
+console.log(myArray)
+
+  
+
+
+
+
+
+
+
+
+ //----fibonaccigen ------------
+
+
+ function fibonacciGenerator(b) {
+	
+    if (b === 0) {
+        console.log([0])
+        
+    } else {
+        
+     let sequenceStart = [0, 1]
+     let n = b
+    
+    
+    while (sequenceStart.length < n) {
+    
+     
+        let arrayLength = sequenceStart.length
+        let numBefore = sequenceStart[arrayLength-2]
+        let currNum = sequenceStart[arrayLength-1]	
+       
+        let mathLogic = numBefore + currNum
+        sequenceStart.push(mathLogic)	   
+      }
+    
+      console.log(sequenceStart)
+    }
+    
+    }
+                
+        //------------
+
+
+
+ let sequenceStart = [0, 1, 1]
+
+ for (let i = 0; i <30; i++) {
+  
+   let arrayLength = sequenceStart.length
+   let numBefore = sequenceStart[arrayLength-2]
+   let currNum = sequenceStart[arrayLength-1]	
+  
+   let mathLogic = numBefore + currNum
+	 sequenceStart.push(mathLogic)
+	 console.log(sequenceStart)
+	 i++
+ 
+ }
+
+ //---i think i made this based off online workesd but is 1 number behind the # you actually want
+
+
+ let sequenceStart = [0, 1, 1]
+ let n = 10; //got to figure out how to put this in function but... this is the number in sequence you wanna find (10 numb in fib sequence)
+
+
+
+ for (let i = 0; i <= n; i++) {
+  
+   let arrayLength = sequenceStart.length
+   let numBefore = sequenceStart[arrayLength-2]
+   let currNum = sequenceStart[arrayLength-1]	
+  
+   let mathLogic = numBefore + currNum
+	 sequenceStart.push(mathLogic)
+	 console.log(sequenceStart)
+	 i++
+ 
+ }
+ 
+// --another one i made ------------------
+ let sequenceStart = [0, 1, 1] //fib sequence is last number + last LAST number = new Number...then repeat 
+let n = 10; //got to figure out how to put this in function but... this is the number in sequence you wanna find (10 numb in fib sequence)
+
+
+
+ for (let i = 0; i <= n; i++) {
+  
+   let arrayLength = sequenceStart.length
+   let numBefore = sequenceStart[arrayLength-2]
+   let currNum = sequenceStart[arrayLength-1]	
+   let mathLogic = numBefore + currNum
+	 
+   sequenceStart.push(mathLogic)
+	 
+	 if (i === n) {
+		 console.log(arrayLength + " is the number you inputted, fibonacci # array to that interger is below!")
+	 	console.log(sequenceStart)
+	 } else {
+		
+		
+	    i++
+		 
+	 }
+ }
+ 
+ //--- one i made, works the best
+ let sequenceStart = [0, 1, 1]
+ let n = ?????
+
+while (sequenceStart.length < n) {
+
+ 
+	let arrayLength = sequenceStart.length
+	let numBefore = sequenceStart[arrayLength-2]
+	let currNum = sequenceStart[arrayLength-1]	
+   
+	let mathLogic = numBefore + currNum
+	  sequenceStart.push(mathLogic)
+	  console.log(sequenceStart)
+	  
+	  console.log("pizza")
+  
+  }
+
+
+  
+  //----teacher answer
+
+  function fibonacciGenerator (n) {
+    //TODO 
+    var res = [];
+    for (var i = 0; i < n; i++) {
+        if (i == 0) res.push(0);
+        else if (i == 1) res.push(1);
+        else res.push(res[i-1] + res[i-2]);
+    }
+    return res;
+    //Return an array of fibonacci numbers.
+}
+
 
 
 
