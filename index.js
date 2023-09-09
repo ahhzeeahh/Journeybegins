@@ -265,6 +265,18 @@ while (sequenceStart.length < n) {
     return res;
     //Return an array of fibonacci numbers.
 }
+//---making objects
+function HouseMaker (name, age, past, work) {
+
+    this.name= name;
+   this.age = age;
+    this.pastJobs = past;
+    this.workDuty = work;
+   cleanUp = alert('cleaning n porgress..')
+}
+
+let houseKeeper2 = new HouseMaker('jessy' , 21 , ['none'], ['cleaning' , 'laundry' , 'bathroom']);
+let houseKeeper3 = new HouseMaker('maddie' , 19 , ['best western'], ['cleaning' , 'laundry' , 'bathroom']);
 
 
 
