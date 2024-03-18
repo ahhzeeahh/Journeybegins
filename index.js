@@ -1,3 +1,15 @@
+//---- see the w x h or a browser-----------
+const heightOutput = document.querySelector("#height");
+const widthOutput = document.querySelector("#width");
+
+function updateSize() {
+  heightOutput.textContent = window.innerHeight;
+  widthOutput.textContent = window.innerWidth;
+}
+
+updateSize();
+window.addEventListener("resize", updateSize);
+
 
 //----random list picker----------
 let getList= prompt("input names here USE commas inbetween!");
