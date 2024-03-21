@@ -1,3 +1,50 @@
+/*----Quick Dark/ light mode changer---------
+<h1 id="node" >Hello world</h1>
+<button id="darkBtn">Dark Mode</button>
+<button id="lightBtn">Light Mode</button>
+body{
+  text-align: center;
+  background: #ccf;
+  color: #3400a9; 
+}
+button{
+  color: #3400a9;
+  font-weight: 900;
+  letter-spacing: 2px;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  border: 2px solid #3400a9;
+  margin: 20px
+}
+#darkBtn{
+  background: #000;
+}
+
+lightBtn{
+  background: #fff;
+}
+*/
+let dark = document.getElementById('darkBtn');
+let light = document.getElementById('lightBtn');
+let node = document.getElementById('node');
+
+light.addEventListener("click", () =>{
+  document.body.style.background = 'white';
+  document.body.style.color = 'black'
+  node.textContent = 'Light Mode On'
+                      
+})
+
+dark.addEventListener("click", () =>{
+  document.body.style.background = '#222';
+  document.body.style.color = 'white'
+  node.textContent = 'Dark Mode On'
+                      
+})
+
+
+
+
 //---- see the w x h or a browser-----------
 const heightOutput = document.querySelector("#height");
 const widthOutput = document.querySelector("#width");
