@@ -1,3 +1,20 @@
+/* Setup a basic request to an API */
+
+fetch(url)
+  .then((res) => {
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    return res.json();
+  })
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.error("Fetch error:", error);
+  });
+
+
 /*----Quick Dark/ light mode changer---------
 <h1 id="node" >Hello world</h1>
 <button id="darkBtn">Dark Mode</button>
